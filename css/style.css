@@ -1,0 +1,27 @@
+/* css */
+
+:root {
+  /* color */
+  --tc: #1e293b;
+  --bc: #f8fafc;
+  --bcc: #e3e8f0;
+  --bl: #d1d5db;
+  --o: #ea580c;
+  --g: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.5;
+}

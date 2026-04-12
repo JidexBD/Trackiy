@@ -3,8 +3,14 @@ header {
   background-color: var(--bcc);
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin-bottom: 2rem;
 }
 
+header h1 {
+  font-size: 2rem;
+}
 .header-content {
   display: none;
 }
@@ -91,10 +97,204 @@ header {
   cursor: pointer;
 }
 
+/* tab */
+@media (min-width: 768px) {
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  header h1 {
+    font-size: 3.2rem;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
 /* content */
 .content {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-header i {
+  font-size: 2rem;
+}
+
+.amount {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#ecp {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.changes {
+  font-size: 1.2rem;
+  color: darkgreen;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.my-card {
+  background: var(--g);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-chip {
+  width: 32px;
+  height: 24px;
+  background: #fbbf24;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.card-chip::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #92400e;
+  border-radius: 2px;
+}
+
+.card-number {
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  font-family: "Courier New", monospace;
+}
+
+.card-holder {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.card-logo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: -8px;
+}
+
+.card-logo-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.logo-red {
+  background: #ef4444;
+}
+
+.logo-orange {
+  background: #f59e0b;
+  margin-left: -8px;
+}
+
+.spending-section {
+  margin-top: 2rem;
+}
+
+.spending-limit {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.spending-used {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ea580c;
+  width: 37%;
+  border-radius: 3px;
+}
+
+/* tab */
+@media (min-width: 768px) {
+  .expense-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .content {
+    padding: 2rem;
+  }
+
+  .expense-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 350px;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
 }
